@@ -1,6 +1,7 @@
 # daily-ui-challenge-001-login
 
-> A responsive login page (for daily UI challenge #001)
+> A response login / signup page (for daily UI challenge #001)
+> Demo [here](https://daily-ui-challenge-001.firebaseapp.com/)
 
 ## Build Setup
 
@@ -17,5 +18,3 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 ```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

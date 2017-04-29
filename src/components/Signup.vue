@@ -1,14 +1,17 @@
 <template>
-  <form class="signup">
-    <input type="text" placeholder="Your Name" v-model="name"
-            v-focus="focused" @focus="focused = true" @blur="focused = false">
-    <input type="email" placeholder="E-mail" v-model="email">
-    <input type="password" placeholder="Password"  v-model="password">
-    <input type="password" placeholder="Password Confirmation" v-model="passwordConfirmation">
+  <div class="signup-container">
+    <a @click.prevent="cancel" class="login-link">Already have an account?</a>
+    <form class="signup-form">
+      <input type="text" placeholder="Your Name" v-model="name" class="username"
+              v-focus="focused" @focus="focused = true" @blur="focused = false">
+      <input type="email" placeholder="E-mail" v-model="email" class="email">
+      <input type="password" placeholder="Password"  v-model="password" class="password">
+      <!-- <input type="password" placeholder="Password Confirmation" class="password-confirmation"
+              v-model="passwordConfirmation"> -->
 
-    <button type="button" @click.prevent="cancel">Back</button>
-    <button type="button" @click.prevent>Join</button>
-  </form>
+      <button type="button" @click.prevent class="join-button">Join</button>
+    </form>
+  </div>
 </template>
 
 <script>

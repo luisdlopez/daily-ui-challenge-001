@@ -2,7 +2,8 @@ $width: 400px;
 $height: 550px;
 
 .box {
-  color: white;
+  background: url('assets/photo-1472739841375-d0ea9f0cb6a6.jpg') no-repeat center;
+  background-size: 100% auto;
   position: relative;
   height: $height;
   width: $width;

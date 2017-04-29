@@ -1,12 +1,15 @@
 <template>
-  <form class="login">
-    <input type="email" placeholder="E-mail"
-            v-focus="focused" @focus="focused = true" @blur="focused = false">
-    <input type="password" placeholder="Password">
+  <div class="login-container">
+    <a @click.prevent="signup" class="signup-link">You don't have an account?</a>
+    <form class="login-form">
+      <input type="email" placeholder="E-mail" class="email"
+              v-focus="focused" @focus="focused = true" @blur="focused = false">
+      <input type="password" placeholder="Password" class="password">
 
-    <button type="button" @click.prevent>Login</button>
-    <a @click.prevent="signup">You don't have an account?</a>
-  </form>
+      <button type="button" @click.prevent class="login-button">Login</button>
+    </form>
+
+  </div>
 </template>
 
 <script>
