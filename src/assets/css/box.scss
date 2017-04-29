@@ -1,0 +1,37 @@
+$width: 400px;
+$height: 600px;
+
+.box {
+  color: white;
+  position: relative;
+  height: $height;
+  width: $width;
+  margin: 50px auto;
+  border-radius: 5px;
+
+  &.shadow {
+    position: relative;
+    box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.3);
+
+    &:before, 
+    &:after {
+      content: "";
+      position: absolute; 
+      z-index: -1;
+      top: 0;
+      bottom: 0;
+      left: 10px;
+      right: 10px;
+      border-radius: 10px;
+    }
+  }
+
+  .overlay {
+      background: rgba(0, 0, 0, 0.4);
+      position: absolute;
+      height: $height;
+      width: $width;
+      border-radius: 5px;
+  }
+
+}

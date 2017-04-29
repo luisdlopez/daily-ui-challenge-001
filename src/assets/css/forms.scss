@@ -1,0 +1,95 @@
+$input-font-weight: 200;
+$place-holder-focus: 0.6;
+$login-padding-top: 162px;
+$signup-padding-top: 100px;
+
+form.login,
+form.signup {
+  text-align: center;
+  position: relative;
+
+  input, button, a {
+    display: block;
+    margin: 0 auto 15px auto;
+  }
+
+  input, button, a {
+    width : 300px;
+    -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+    -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+    box-sizing: border-box;
+  }
+
+  input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-size: 28px;
+    font-weight: $input-font-weight;
+    padding: 5px;
+    color: #fff;
+  }
+
+  /* change placeholder color */
+  ::-webkit-input-placeholder { /* Chrome */
+    color: #fff;
+    transition: opacity 250ms ease-in-out;
+  }
+  :focus::-webkit-input-placeholder {
+    opacity: $place-holder-focus;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: #fff;
+    transition: opacity 250ms ease-in-out;
+  }
+  :focus:-ms-input-placeholder {
+    opacity: $place-holder-focus;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: #fff;
+    opacity: 1;
+    transition: opacity 250ms ease-in-out;
+  }
+  :focus::-moz-placeholder {
+    opacity: $place-holder-focus;
+  }
+  :-moz-placeholder { /* Firefox 4 - 18 */
+    color: #fff;
+    opacity: 1;
+    transition: opacity 250ms ease-in-out;
+  }
+  :focus:-moz-placeholder {
+    opacity: $place-holder-focus;
+  }
+
+  /* remove focus outline */
+  input:focus {
+    outline: none;
+  }
+
+  button {
+    cursor: pointer;
+    background: none;
+    color: #fff;
+    border: none;
+    font-size: 21px;
+  }
+
+  a {
+    cursor: pointer;
+    font-size: 14px;
+  }
+}
+
+form.login {
+  padding-top: $login-padding-top;
+}
+
+form.signup {
+  padding-top: $signup-padding-top;
+
+  button {
+    display: inline-block;
+    width: 150px;
+  }
+}
