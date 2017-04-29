@@ -1,5 +1,5 @@
 $width: 400px;
-$height: 600px;
+$height: 550px;
 
 .box {
   color: white;
@@ -13,10 +13,10 @@ $height: 600px;
     position: relative;
     box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.3);
 
-    &:before, 
+    &:before,
     &:after {
       content: "";
-      position: absolute; 
+      position: absolute;
       z-index: -1;
       top: 0;
       bottom: 0;

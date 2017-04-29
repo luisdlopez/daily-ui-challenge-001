@@ -5,7 +5,7 @@
     <input type="email" placeholder="E-mail" v-model="email">
     <input type="password" placeholder="Password"  v-model="password">
     <input type="password" placeholder="Password Confirmation" v-model="passwordConfirmation">
-    
+
     <button type="button" @click.prevent="cancel">Back</button>
     <button type="button" @click.prevent>Join</button>
   </form>
@@ -36,7 +36,6 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss" rel="stylesheet/scss">
 @import '../assets/css/forms.scss';
 </style>
