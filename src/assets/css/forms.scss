@@ -12,8 +12,8 @@ $height: 550px;
 
 $button-color: #EEE;
 $button-padding: 8px;
-$button-background-color: rgba(184, 204, 202, 0.9); // rgba(169, 192, 191, 0.9);
-$button-font-size: 24px;
+$button-background-color: rgba(158,50,60, 0.6);
+$button-font-size: 18px;
 
 $link-font-size: 14px;
 $link-color: #EEE;
@@ -24,26 +24,48 @@ $link-color: #EEE;
   text-align: center;
   position: relative;
 
-  .login-form {
-    // padding-top: $login-padding-top;
+  .title {
+    color: white;
+    font-size: 56px;
+    font-weight: 400;
     position: relative;
     margin: auto;
-    top: 25%
+    top: 5%;
   }
 
-  .signup-form {
-    // padding-top: $signup-padding-top;
+  .subtitle {
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
     position: relative;
     margin: auto;
-    top: 25%
+    top: 8%;
   }
 
   .login-form, .signup-form {
     color: white;
+    position: relative;
+    margin: auto;
+    top: 25%;
 
-    .username, .email, .password,
-    .password-confirmation, .join-button,
-    .login-button {
+    .form-input {
+      display: block;
+      margin: 0 auto 15px auto;
+      width: 300px;
+      -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+      -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+      box-sizing: border-box;
+      background: rgba(255, 255, 255, 0.2);
+
+      .fa {
+        width: 20px;
+        vertical-align: text-top;
+        color: $input-placeholder-color;
+        opacity: 0.8;
+      }
+    }
+
+    .join-button, .login-button {
       display: block;
       margin: 0 auto 15px auto;
       width: 300px;
@@ -52,9 +74,9 @@ $link-color: #EEE;
       box-sizing: border-box;
     }
 
-    .username, .email, .password,
-    .password-confirmation {
-      background: rgba(255, 255, 255, 0.2);
+    .username, .email, .password {
+      width: 240px;
+      background: none;
       border: none;
       font-size: $input-font-size;
       font-weight: $input-font-weight;
@@ -117,7 +139,7 @@ $link-color: #EEE;
       cursor: pointer;
 
       &:active {
-        background-color: #8DA29F; //#3e8e41;
+        background-color: rgba(158,50,60, 0.9); //#3e8e41;
         transform: translateY(4px);
       }
     }
@@ -135,6 +157,7 @@ $link-color: #EEE;
     box-sizing: border-box;
     position: relative;
     top: 500px;
+    outline: none;
   }
 
 }

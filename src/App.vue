@@ -4,8 +4,7 @@
       <div v-if="display" class="box shadow">
         <div class="overlay"></div>
         <transition :name="transition" mode="out-in">
-          <signup v-if="signup" @cancel="hideSignupForm"></signup>
-          <login  v-if="login" @signup="displaySignupForm"></login>
+          <component :is="view" @cancel="hideSignupForm" @signup="displaySignupForm"></component>
         </transition>
       </div>
     </transition>
@@ -24,9 +23,8 @@ export default {
   },
   data () {
     return {
-      login: false,
-      signup: false,
       display: false,
+      view: '',
       transition: 'slide-right'
     }
   },
@@ -35,16 +33,16 @@ export default {
       this.display = true
     }, 100)
     setTimeout(() => {
-      this.login = true
+      this.view = 'login'
     }, 400)
   },
   methods: {
     displaySignupForm: function () {
-      this.signup = true
+      this.view = 'signup'
       this.transition = 'slide-left'
     },
     hideSignupForm: function () {
-      this.signup = false
+      this.view = 'login'
       this.transition = 'slide-right'
     }
   }

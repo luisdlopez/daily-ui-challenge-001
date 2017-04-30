@@ -1,14 +1,26 @@
 <template>
   <div class="login-container">
+    
     <a @click.prevent="signup" class="signup-link">You don't have an account?</a>
+    <h1 class="title">Daily UI</h1>
+    <p class="subtitle">Welcome back!</p>
+
     <form class="login-form">
-      <input type="email" placeholder="E-mail" class="email"
-              v-focus="focused" @focus="focused = true" @blur="focused = false">
-      <input type="password" placeholder="Password" class="password">
 
-      <button type="button" @click.prevent class="login-button">Login</button>
+      <div class="form-input">
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+        <input type="email" placeholder="E-mail Address" class="email"
+                v-focus="focused" @focus="focused = true" @blur="focused = false">
+      </div>
+
+      <div class="form-input">
+        <i class="fa fa-lock" aria-hidden="true"></i>
+        <input type="password" placeholder="Password" class="password">
+      </div>
+
+      <button type="button" @click.prevent class="login-button">SIGN IN</button>
+
     </form>
-
   </div>
 </template>
 
