@@ -1,6 +1,6 @@
 # daily-ui-challenge-001-login
 
-> A response login / signup page (for daily UI challenge #001)
+> A login / signup page (for daily UI challenge #001)
 
 > Demo <a href="https://daily-ui-challenge-001.firebaseapp.com/" target="_blank">here</a>
 
